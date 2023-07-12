@@ -8,6 +8,7 @@ from .Providers import (
     ChatgptLogin,
     ChatgptLogin,
     DeepAi,
+    Dfehub,
     Easychat,
     Ezcht,
     Fakeopen,
@@ -16,7 +17,6 @@ from .Providers import (
     Gravityengine,
     H2o,
     hteyun,
-    Lsdev,
     Liaobots,
     Lockchat,
     Mishalsgpt,
@@ -24,6 +24,7 @@ from .Providers import (
     Theb,
     Vercel,
     Weuseing,
+    Xiaor,
     Yqcloud,
     You,
 )

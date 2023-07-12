@@ -1,5 +1,5 @@
 from g4f import Provider
-
+import random
 
 class Model:
     class model:
@@ -10,24 +10,22 @@ class Model:
     class gpt_35_turbo:
         name: str = 'gpt-3.5-turbo'
         base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.Better
-        best_providers: list = [Provider.Better,  Provider.Lockchat, Provider.Yqcloud, Provider.Forefront,]
+        best_provider: Provider.Provider = random.choice([Provider.DeepAi, Provider.Gravityengine])
 
     class gpt_35_turbo_0613:
         name: str = 'gpt-3.5-turbo-0613'
         base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.Better
+        best_provider: Provider.Provider = Provider.Gravityengine
 
     class gpt_35_turbo_16k_0613:
         name: str = 'gpt-3.5-turbo-16k-0613'
         base_provider: str = 'openai'
         best_provider: Provider.Provider = Provider.Gravityengine
-        best_providers: list = [Provider.Easychat, Provider.Ezcht, Provider.Better]
 
     class gpt_35_turbo_16k:
         name: str = 'gpt-3.5-turbo-16k'
         base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.Better
+        best_provider: Provider.Provider = Provider.Gravityengine
 
     class gpt_4_dev:
         name: str = 'gpt-4-for-dev'
@@ -37,13 +35,12 @@ class Model:
     class gpt_4:
         name: str = 'gpt-4'
         base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.Lockchat
-        best_providers: list = [Provider.Bing, Provider.Lockchat]
+        best_provider: Provider.Provider = Provider.Dfehub
     
     class gpt_4_0613:
         name: str = 'gpt-4-0613'
         base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.Lsdev
+        best_provider: Provider.Provider = Provider.Lockchat
         best_providers: list = [Provider.Bing, Provider.Lockchat]
 
     class claude_instant_v1_100k:
